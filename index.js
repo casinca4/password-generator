@@ -16,6 +16,7 @@ const generatePassword = () => {
 				let randomIndex = Math.ceil(Math.random() * characters.length - 1);
 				randomPassword.push(characters[randomIndex]);
 			}
+
 			const password = randomPassword.join("");
 			passwordContainer[i].textContent = password;
 		
@@ -28,8 +29,8 @@ const generatePassword = () => {
 			
 
 			copyIcon.addEventListener("click", function() {
-				navigator.clipboard.writeText(password);
-				alert("Copied the password: " + password)
+			navigator.clipboard.writeText(password);
+			alert("Copied the password: " + password);
 			})
 		}
 	}
