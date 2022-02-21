@@ -38,3 +38,10 @@ passwordLengthNumber.addEventListener("click", () => {
 		console.log("Text:", opt.text)
 		// return opt;
 })
+
+
+	
+const copyIcon = document.createElement("button");
+copyIcon.innerHTML = '<img src="./copy-icon.png"></img>'
+copyIcon.classList.add("copy-icon");
+passwordContainer[i].append(copyIcon);

@@ -18,19 +18,14 @@ const generatePassword = () => {
 			}
 			const password = randomPassword.join("");
 			passwordContainer[i].textContent = password;
-			
+		
+		
 			const copyIcon = document.createElement("img");
 			copyIcon.src = "./copy-icon.png";
+			copyIcon.title = "Copy password";
 			copyIcon.classList.add("copy-icon");
 			passwordContainer[i].append(copyIcon);
 			
-			copyIcon.addEventListener("mouseover", function() {
-				const copyPassword = document.createElement("span");
-				copyIcon.appendChild(copyPassword)
-				copyPassword.innerHTML = "Copy password";
-				console.log(copyPassword)
-				copyPassword.className = "show-copy-text"
-			})
 
 			copyIcon.addEventListener("click", function() {
 				navigator.clipboard.writeText(password);

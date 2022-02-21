@@ -81,21 +81,17 @@ h2 {
 }
 
 .copy-icon {
+  color: white;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.3;
   position: absolute ;
   right: 15px;
   top: 17px;
+  background-color: rgb(45, 59, 78);
+  border: none;
 }
 
 .copy-icon:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
-
-.show-copy-text {
-  visibility: visible;
-  display: inline;
-  border: 2px solid red;
-}
-
 
